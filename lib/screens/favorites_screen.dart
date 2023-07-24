@@ -25,6 +25,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:translater/generated/l10n.dart';
 import 'package:translater/screens/widgets/favorites_util.dart';
 
 class FavoritesScreen extends StatelessWidget {
@@ -32,7 +33,7 @@ class FavoritesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Избранные переводы'), // Заголовок AppBar
+        title: Text(S.of(context).favoriteScreenTitle), // Заголовок AppBar
       ),
       body: ValueListenableBuilder<Box<Favorites>>(
         valueListenable: Hive.box<Favorites>('Favorites')
@@ -44,8 +45,9 @@ class FavoritesScreen extends StatelessWidget {
           if (favoritesList.isEmpty) {
             // Если список избранных пуст
             return Center(
-              child: Text(
-                  'Список избранных пуст'), // Вывод сообщения о пустом списке
+              child: Text(S
+                  .of(context)
+                  .favoriteListEmpty), // Вывод сообщения о пустом списке
             );
           } else {
             // Если список избранных не пуст

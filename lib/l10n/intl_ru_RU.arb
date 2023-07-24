@@ -10,6 +10,8 @@
     "favorites": "Избранное",
     "chooseLangSource": "Язык исходного текста:",
     "chooseLangTarget": "Перевести на язык:",
-    "appNameHeader": "Переводчик"
+    "appNameHeader": "Переводчик",
+    "favoriteListEmpty":"Список избранных пуст",
+    "favoriteScreenTitle": "Избранные переводы"
   }
   

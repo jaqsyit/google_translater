@@ -169,6 +169,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Favorite list is empty`
+  String get favoriteListEmpty {
+    return Intl.message(
+      'Favorite list is empty',
+      name: 'favoriteListEmpty',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Favorite translates`
+  String get favoriteScreenTitle {
+    return Intl.message(
+      'Favorite translates',
+      name: 'favoriteScreenTitle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -10,5 +10,7 @@
     "favorites": "Favorites",
     "chooseLangSource": "Source text language:",
     "chooseLangTarget": "Target language:",
-    "appNameHeader": "Translater"
+    "appNameHeader": "Translater",
+    "favoriteListEmpty":"Favorite list is empty",
+    "favoriteScreenTitle": "Favorite translates"
   }

@@ -33,6 +33,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "english": MessageLookupByLibrary.simpleMessage("English"),
         "enterText":
             MessageLookupByLibrary.simpleMessage("Enter text to translate..."),
+        "favoriteListEmpty":
+            MessageLookupByLibrary.simpleMessage("Favorite list is empty"),
+        "favoriteScreenTitle":
+            MessageLookupByLibrary.simpleMessage("Favorite translates"),
         "favorites": MessageLookupByLibrary.simpleMessage("Favorites"),
         "hello": MessageLookupByLibrary.simpleMessage("Hello"),
         "russian": MessageLookupByLibrary.simpleMessage("Russian"),
