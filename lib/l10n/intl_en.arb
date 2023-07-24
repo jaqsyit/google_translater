@@ -1,0 +1,14 @@
+{
+    "hello": "Hello",
+    "russian": "Russian",
+    "english": "English",
+    "translate": "Translate",
+    "addToFavorites": "Add to Favorites",
+    "viewFavorites": "View Favorites",
+    "darkTheme": "Dark Theme",
+    "enterText": "Enter text to translate...",
+    "favorites": "Favorites",
+    "chooseLangSource": "Source text language:",
+    "chooseLangTarget": "Target language:",
+    "appNameHeader": "Translater"
+  }

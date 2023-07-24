@@ -1,0 +1,15 @@
+{
+    "hello": "Привет",
+    "russian": "Русский",
+    "english": "Английский",
+    "translate": "Перевести",
+    "addToFavorites": "Добавить в избранное",
+    "viewFavorites": "Просмотреть избранное",
+    "darkTheme": "Темная тема",
+    "enterText": "Введите текст для перевода...",
+    "favorites": "Избранное",
+    "chooseLangSource": "Язык исходного текста:",
+    "chooseLangTarget": "Перевести на язык:",
+    "appNameHeader": "Переводчик"
+  }
+  
