@@ -6,6 +6,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:translater/constants/app_styles.dart'; // Импорт стилей приложения
+import 'package:translater/repo/app_settings.dart';
 import 'package:translater/repo/repo_settings.dart'; // Импорт класса для работы с настройками приложения
 import 'package:translater/screens/home_page.dart'; // Импорт домашней страницы приложения
 import 'package:translater/screens/widgets/favorites_util.dart';
@@ -37,6 +38,9 @@ Future<void> main() async {
   Hive.registerAdapter(FavoritesAdapter());
   await Hive.openBox<Favorites>('Favorites');
 
+  // Открытие коробки для настроек
+  await Hive.openBox<AppSettings>('AppSettings');
+
   // Установка локали приложения
   var defaultLocale =
       const Locale('ru', 'RU'); // Локаль по умолчанию - русский язык
@@ -45,6 +49,13 @@ Future<void> main() async {
   if (locale == 'en') {
     defaultLocale = const Locale(
         'en'); // Если локаль - английский, установить английскую локаль
+  }
+
+  // Загрузка сохраненных настроек
+  final settingsBox = Hive.box<AppSettings>('AppSettings');
+  final savedSettings = settingsBox.get('settings');
+  if (savedSettings != null) {
+    defaultLocale = Locale(savedSettings.locale);
   }
 
   // Запуск главного виджета приложения (TranslatorApp) с установленной локалью
@@ -82,8 +93,7 @@ class TranslatorApp extends StatelessWidget {
           primarySwatch: AppColors.customColor, // Основной цвет приложения
         ),
         // Инициализация адаптивной темы на основе системных настроек
-        initial:
-            AdaptiveThemeMode.light, // По умолчанию используется светлая тема
+        initial: AdaptiveThemeMode.light,
         builder: (theme, darkTheme) => MaterialApp(
           debugShowCheckedModeBanner:
               false, // Отключение баннера с надписью "Debug"
