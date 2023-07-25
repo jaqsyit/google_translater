@@ -12,5 +12,7 @@
     "chooseLangTarget": "Target language:",
     "appNameHeader": "Translater",
     "favoriteListEmpty":"Favorite list is empty",
-    "favoriteScreenTitle": "Favorite translates"
+    "favoriteScreenTitle": "Favorite translates",
+    "savedToFav": "Saved to favorites!",
+    "copyed": "The translated text is copyed"
   }

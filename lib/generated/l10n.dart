@@ -189,6 +189,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Saved to favorites!`
+  String get savedToFav {
+    return Intl.message(
+      'Saved to favorites!',
+      name: 'savedToFav',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The translated text is copyed`
+  String get copyed {
+    return Intl.message(
+      'The translated text is copyed',
+      name: 'copyed',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

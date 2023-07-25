@@ -29,6 +29,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Source text language:"),
         "chooseLangTarget":
             MessageLookupByLibrary.simpleMessage("Target language:"),
+        "copyed": MessageLookupByLibrary.simpleMessage(
+            "The translated text is copyed"),
         "darkTheme": MessageLookupByLibrary.simpleMessage("Dark Theme"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
         "enterText":
@@ -40,6 +42,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "favorites": MessageLookupByLibrary.simpleMessage("Favorites"),
         "hello": MessageLookupByLibrary.simpleMessage("Hello"),
         "russian": MessageLookupByLibrary.simpleMessage("Russian"),
+        "savedToFav":
+            MessageLookupByLibrary.simpleMessage("Saved to favorites!"),
         "translate": MessageLookupByLibrary.simpleMessage("Translate"),
         "viewFavorites": MessageLookupByLibrary.simpleMessage("View Favorites")
       };

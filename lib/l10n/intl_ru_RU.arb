@@ -12,6 +12,8 @@
     "chooseLangTarget": "Перевести на язык:",
     "appNameHeader": "Переводчик",
     "favoriteListEmpty":"Список избранных пуст",
-    "favoriteScreenTitle": "Избранные переводы"
+    "favoriteScreenTitle": "Избранные переводы",
+    "savedToFav": "Успешно сохранено в избранное!",
+    "copyed": "Текст успешно скопирован!"
   }
   

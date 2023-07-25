@@ -29,6 +29,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Язык исходного текста:"),
         "chooseLangTarget":
             MessageLookupByLibrary.simpleMessage("Перевести на язык:"),
+        "copyed":
+            MessageLookupByLibrary.simpleMessage("Текст успешно скопирован!"),
         "darkTheme": MessageLookupByLibrary.simpleMessage("Темная тема"),
         "english": MessageLookupByLibrary.simpleMessage("Английский"),
         "enterText": MessageLookupByLibrary.simpleMessage(
@@ -40,6 +42,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "favorites": MessageLookupByLibrary.simpleMessage("Избранное"),
         "hello": MessageLookupByLibrary.simpleMessage("Привет"),
         "russian": MessageLookupByLibrary.simpleMessage("Русский"),
+        "savedToFav": MessageLookupByLibrary.simpleMessage(
+            "Успешно сохранено в избранное!"),
         "translate": MessageLookupByLibrary.simpleMessage("Перевести"),
         "viewFavorites":
             MessageLookupByLibrary.simpleMessage("Просмотреть избранное")
