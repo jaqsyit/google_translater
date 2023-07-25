@@ -119,7 +119,7 @@ class _HomePageState extends State<HomePage> {
   void _copyTranslatedText() {
     if (translatedText.isNotEmpty) {
       Clipboard.setData(ClipboardData(text: translatedText));
-      _showSnackBar('Текст успешно скопирован!');
+      _showSnackBar(S.of(context).copyed);
     }
   }
 
@@ -143,7 +143,7 @@ class _HomePageState extends State<HomePage> {
               iconSize: 36,
               onPressed: () {
                 saveToFavorites(originalText!, translatedText);
-                _showSnackBar(S.of(context).);
+                _showSnackBar(S.of(context).savedToFav);
               },
               icon: Icon(Icons.star_border),
             ),
