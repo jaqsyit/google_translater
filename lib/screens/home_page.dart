@@ -119,7 +119,7 @@ class _HomePageState extends State<HomePage> {
   void _copyTranslatedText() {
     if (translatedText.isNotEmpty) {
       Clipboard.setData(ClipboardData(text: translatedText));
-      _showSnackBar(S.of(context).copyed);
+      _showSnackBar('Текст успешно скопирован!');
     }
   }
 
