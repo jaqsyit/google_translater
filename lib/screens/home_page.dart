@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:hive/hive.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
+import 'package:translater/constants/app_colors.dart';
 import 'package:translater/generated/l10n.dart';
 import 'package:translater/constants/app_styles.dart';
 import 'package:translater/repo/repo_languages.dart';
@@ -142,7 +143,7 @@ class _HomePageState extends State<HomePage> {
             child: IconButton(
               iconSize: 36,
               onPressed: () {
-                saveToFavorites(originalText!, translatedText);
+                saveToFavorites(originalText ?? '', translatedText);
                 _showSnackBar(S.of(context).savedToFav);
               },
               icon: Icon(Icons.star_border),
@@ -194,6 +195,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               IconButton(
+                color: AppColors.primary,
                 iconSize: 36,
                 onPressed: _swapTexts, // Вызываем функцию для замены текстов
                 icon: Icon(Icons.swap_vert_rounded),
@@ -240,6 +242,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   IconButton(
+                    color: AppColors.primary,
                     iconSize: 36,
                     onPressed:
                         _copyTranslatedText, // Вызовите функцию для копирования переведенного текста

@@ -6,7 +6,7 @@
 git add .
 
 # Создать коммит с сообщением "Auto commit"
-git commit -m "Stable version 1"
+git commit -m "Stable version 2"
 
 # Отправить изменения на удаленный репозиторий
 git push origin main
